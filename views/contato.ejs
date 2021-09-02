@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contato</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Contato</h1>
+    <p>Pagina Contato</p>
+    <img class="img" src="/images/user-icon.svg" alt="" />
+    <!-- Tags EJS -->
+      <% let contato = [{tel: "0000-0000", end: "Rua X", cep: "111111"}, {tel: "0000-0000", end: "Rua X", cep: "111111"}]; %>
+      <ul>
+      <% for(let contatos of contato) { %><!--  TAG  <%  codigo javascript %>  -->
+        <li><%= contatos.tel %></li><!--tag <%= O QUE EU QUERO IMPRIMIR %>-->
+      <% } %>
+      </ul>
+  </body>
+</html>

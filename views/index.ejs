@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    
+    <% let texto = "Essa é a pagina inicial"; %>
+    <%= texto %>
+
+    <br>
+
+    <div class="pessoas">
+      
+    <% let pessoas = [{nome: "Zé", idade: "18"}, {nome: "Dean", idade: "20"}]; %>
+
+    <% for (let pessoa of pessoas) { %>
+      Nome: <%= pessoa.nome %>
+      Idade: <%= pessoa.idade %>
+      <br>
+    <% } %>
+
+    </div>
+      
+  </body>
+</html>
